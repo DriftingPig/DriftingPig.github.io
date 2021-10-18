@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a graduate student at the Ohio State University ([OSU](https://www.osu.edu/)), Center for Cosmology and AstroParticle Physics ([CCAPP](https://ccapp.osu.edu/)). I finished my undergradute study in University of Science and Technology of China ([USTC](https://en.ustc.edu.cn/)), School of the Gitfted Young.  
+I am a graduate student at the Ohio State University ([OSU](https://www.osu.edu/)), Center for Cosmology and AstroParticle Physics ([CCAPP](https://ccapp.osu.edu/)). I finished my undergradute study in University of Science and Technology of China ([USTC](https://en.ustc.edu.cn/)), School of the Gitfted Young. My hometown is in Yangzhou, Jiangsu, China. 
 
 Research Interests
 ======
