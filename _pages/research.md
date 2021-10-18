@@ -1,8 +1,8 @@
 ---
-layout: archive
-title: "Resrarch"
 permalink: /research/
+title: "Research"
 author_profile: true
+layout: archive
 ---
 
 {% include base_path %}
