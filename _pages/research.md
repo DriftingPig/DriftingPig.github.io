@@ -11,6 +11,14 @@ Image simulation
 ======
 Image simulation focuses on the problem of imaging systematics:  false fluctuations in the target galaxy density arising from imperfect measurements in the imaging surveys. Imaging surveys provide the target information for spectroscopic observations.  Galaxies and other objects such as QSOs (Quasars) are selected  from  the  imaging  catalog  using  mainly  flux  and  color  information. These measurements are contaminated by numerous effects such as galactic extinction, the noise level of the images, observing conditions, etc. All these systematic effects need to be understood and corrected for when analyzing the data. I have developed a novel method to correct imaging systematics for ELGs (emission line galaxies) and LRGs (Luminous Red Galaxies). The idea of this method is to use image simulations to study galaxy tracers. I simulate realistic galaxies on pixelated images, add these galaxies to real images, and run the standard image reduction pipeline to recover a catalog of these input simulated galaxies. I showed that the output simulated galaxies catalog shares the same false trends as real galaxies. Using the image simulations provide a first principle manner of predicting the contaminated signal. Results from image simulation are vital for future cosmology measurements: Since we have entered the regime of precision cosmology, decoupling physical signals and measurement errors is a key ingredient for a precise, convincing measurement. 
 
+Here is a demenstration of pipeline diagram: 
+
+{% for post in site.portfolio %}
+  {% if post.title == "Portfolio item number 1" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
 Pipeline Development
 ======
 My work is based on the [Legacysurvey](https://www.legacysurvey.org/) and its image reduction pipeline [Legacypipe](https://github.com/legacysurvey/legacypipe). The Legacysurvey catalogs are used to select targets for DESI to measure spectroscopic redshifts. In our image simulation pipeline, simulated sources are added to the image on a per CCD (individual exposure) level. The catalog of measured properties of simulated sources is obtained by matching to the location of their injection. We are thus provided a mapping between true and observed properties. Our pipeline is able to produce an output simulated galaxies catalog using only a fraction of computing resources that is used by the standard image reduction pipeline, while preserving the same precision level. It is also capable of simulating galaxies in both optical (g,r,z) bands and infrared (WISE, Wide-field Infrared Survey Explorer) bands. 
