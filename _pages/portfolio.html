@@ -9,6 +9,8 @@ author_profile: true
 
 
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% if post.title == "Portfolio item number 1" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
